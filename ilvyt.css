@@ -1,0 +1,100 @@
+.comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .comic-relief-bold {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+*{
+    font-family: "Comic Relief", system-ui;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.answer{
+    text-align: center;
+    color: #e94d58;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 15px 0;
+    background: rgba( 245, 237, 237, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(161, 66, 60, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( -200px );
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.gif{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+    min-height: 100vh;
+    background-image: url(download.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    background: rgba( 255, 136, 136, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(235, 128, 128, 0.671);
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+    border: 1px solid #f5a4a494;
+}
+.heart {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('pink-love-heart-png-design-5692900.svg'); /* Or use an emoji 💖 */
+    background-size: cover;
+    animation: floatUp 5s linear infinite;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-300px) scale(1.5);
+      opacity: 0;
+    }
+  }
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  #hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Behind the GIF */
+  }
+  
+  #gif {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+    
